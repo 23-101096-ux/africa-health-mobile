@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "healthmobile",
   "version": "0.1.0",
   "private": true,
@@ -35,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+=======
+  "dependencies": {
+    "react-router-dom": "^7.14.2"
+>>>>>>> 6f3e12142bafe09015a657d7e71c8226ab29792a
   }
 }
