@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap');
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+
+.btn.full {
+  width: 100%;
+}
+
+
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.btn.primary {
+  background: linear-gradient(135deg, #F5A623 0%, #E8940F 100%);
+  color: #1A1208;
+  box-shadow: 0 4px 24px rgba(245,166,35,0.35);
+}
+
+
+.btn.primary:hover:not(.disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 32px rgba(245,166,35,0.5);
+}
+
+
+.btn.ghost {
+  background: transparent;
+  color: #F5A623;
+  border: 1.5px solid rgba(245,166,35,0.4);
+}
+
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+}
