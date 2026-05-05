@@ -1,10 +1,11 @@
 .bottom-nav {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
-    right: 0;
-    width: 100%;      
-    min-height: 60px;  
+    right: 0;  
+    width: 100%; 
+    max-width: 430px;    
+    min-height: 50px;  
     background: #1a1a1a;
     border-top: 1px solid #2a2a2a;
     display: flex;

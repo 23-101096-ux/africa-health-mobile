@@ -9,46 +9,46 @@ import HomeSec2 from "../components/HomeSec2";
 import HomeSec3 from "../components/HomeSec3";
 import HomeSec4 from "../components/HomeSec4";
 
-
 const Home = () => {
-    const [phase, setPhase] = useState("splash");
-  
-    return (
-      <div className="app-container">
-     
-        {phase === "splash" && (
-          <SplashScreen onFinish={() => setPhase("onboarding")} />
-        )}
+  const [phase, setPhase] = useState(() => {
+    return localStorage.getItem("phase") || "splash";
+  });
 
-        {phase === "onboarding" && (
-          <OnboardingScreens onComplete={() => setPhase("login")} />
-        )}
-
-        {phase === "login" && (
-          <LoginPage 
-            onGoToRegister={() => setPhase("register")} 
-            onLoginSuccess={() => setPhase("home")} 
-          />
-        )}
-
-        {phase === "register" && (
-          <RegisterPage 
-            onGoToLogin={() => setPhase("login")} 
-            onRegisterSuccess={() => setPhase("home")} 
-          />
-        )}
-
-        {phase === "home" && (
-          <div className="home-screen">
-            <HomeHeader />
-            <HomeSec2 />
-            <HomeSec3 />
-            <HomeSec4 />
-          
-          </div>
-        )}
-      </div>
-    );
+  const goToPhase = (p) => {
+    localStorage.setItem("phase", p);
+    setPhase(p);
   };
+
+  return (
+    <div className="app-container">
+      {phase === "splash" && (
+        <SplashScreen onFinish={() => goToPhase("onboarding")} />
+      )}
+      {phase === "onboarding" && (
+        <OnboardingScreens onComplete={() => goToPhase("login")} />
+      )}
+      {phase === "login" && (
+        <LoginPage 
+          onGoToRegister={() => goToPhase("register")} 
+          onLoginSuccess={() => goToPhase("home")} 
+        />
+      )}
+      {phase === "register" && (
+        <RegisterPage 
+          onGoToLogin={() => goToPhase("login")} 
+          onRegisterSuccess={() => goToPhase("home")} 
+        />
+      )}
+      {phase === "home" && (
+        <div className="home-screen">
+          <HomeHeader />
+          <HomeSec2 />
+          <HomeSec3 />
+          <HomeSec4 />
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default Home;
