@@ -78,15 +78,7 @@
   }
   
 
-  /* .menu-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.9);
-    z-index: 2000;
-    display: flex;
-    justify-content: flex-end;
-  }
-   */
+
   .menu-content {
     background: #1c1c1c;
     width: 70%;

@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Mono:wght@300;400;500&display=swap');
 
-/* ── Reset ── */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ── Page Wrapper ── */
+
 .fp-page {
   min-height: 100vh;
   background: #111110;
@@ -24,7 +24,7 @@
   padding: 40px 20px 24px;
 }
 
-/* ── Title ── */
+
 .fp-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.8rem;
@@ -35,7 +35,7 @@
   line-height: 1;
 }
 
-/* ── Search ── */
+
 .fp-search-wrap {
   position: relative;
   margin-bottom: 20px;
@@ -73,7 +73,7 @@
   border-color: #4a4a44;
 }
 
-/* ── Hall Tabs ── */
+
 .fp-halls {
   display: flex;
   gap: 8px;
@@ -110,10 +110,9 @@
   color: #b0ad9e;
 }
 
-/* ── Grid Panel ── */
+
 .fp-grid-panel {
-  background: #1a1a18;
-  border: 1px solid #252520;
+  border: 1px solid #d4820a;
   border-radius: 18px;
   padding: 18px;
   margin-bottom: 20px;
@@ -125,7 +124,7 @@
   gap: 10px;
 }
 
-/* ── Booth Card ── */
+
 .fp-booth {
   aspect-ratio: 1;
   border-radius: 14px;
@@ -149,7 +148,7 @@
   z-index: 2;
 }
 
-/* ── Available ── */
+
 .fp-booth.available {
   background: #0f2e1a;
   border-color: #2ecc71;
@@ -161,7 +160,7 @@
   box-shadow: 0 0 18px rgba(46, 204, 113, 0.28);
 }
 
-/* ── Premium ── */
+
 .fp-booth.premium {
   background: #2a1a04;
   border-color: #d4820a;
@@ -173,14 +172,14 @@
   box-shadow: 0 0 18px rgba(212, 130, 10, 0.28);
 }
 
-/* ── Occupied ── */
+
 .fp-booth.occupied {
   background: #1a1a18;
   border-color: #3a3a36;
   color: #7a7a72;
 }
 
-/* ── Selected ── */
+
 .fp-booth.selected {
   border-color: #f0c040;
   box-shadow: 0 0 20px rgba(240, 192, 64, 0.3);
@@ -188,7 +187,7 @@
   z-index: 3;
 }
 
-/* ── Legend ── */
+
 .fp-legend {
   display: flex;
   justify-content: center;

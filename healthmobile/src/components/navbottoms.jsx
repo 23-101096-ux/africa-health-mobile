@@ -12,19 +12,19 @@ const BottomNav = () => {
 
   return (
     <nav className="bottom-nav">
-      <Link to="/" className={`nav-item ${location.pathname === "/" ? "active" : ""}`}>
+      <Link to="/home" className={`nav-item ${location.pathname === "/home" ? "active" : ""}`}>
         <span className="nav-icon"><img src={home} alt="" /></span>
         <span className="nav-label">Home</span>
       </Link>
-      <Link to="/Maps" className={`nav-item ${location.pathname === "/Maps" ? "active" : ""}`}>
+      <Link to="/maps" className={`nav-item ${location.pathname === "/maps" ? "active" : ""}`}>
         <span className="nav-icon"><img src={mapp} alt="" /></span>
         <span className="nav-label">Map</span>
       </Link>
-      <Link to="/Tickets" className={`nav-item ${location.pathname === "/Tickets" ? "active" : ""}`}>
+      <Link to="/tickets" className={`nav-item ${location.pathname === "/tickets" ? "active" : ""}`}>
         <span className="nav-icon"><img src={tickets} alt="" /></span>
         <span className="nav-label">Tickets</span>
       </Link>
-      <Link to="/Alerts" className={`nav-item ${location.pathname === "/Alerts" ? "active" : ""}`}>
+      <Link to="/alerts" className={`nav-item ${location.pathname === "/alerts" ? "active" : ""}`}>
         <span className="nav-icon"><img src={alerts} alt="" /></span>
         <span className="nav-label">Alerts</span>
       </Link>
