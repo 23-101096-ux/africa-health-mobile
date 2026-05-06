@@ -49,8 +49,8 @@
   }
   
   .icon-circle {
-    width: 48px;
-    height: 48px;
+    width: 48px  !important;
+    height: 48px  !important;
     background: #1c1c1c; 
     border: 1px solid #333;
     border-radius: 50%;
@@ -62,7 +62,7 @@
   }
   
   .header-icon {
-    width: 22px;
+    width: 22px !important;
     height: auto;
   }
   
