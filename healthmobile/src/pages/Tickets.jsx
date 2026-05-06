@@ -1,5 +1,8 @@
 import React from 'react';
 import "./Tickets.css";
+import qr from "../assets/clarity_qr-code-line.svg";
+import dd from "../assets/download.svg";
+
 const Tickets = () => {
     return ( <>
     <div className="tickets-page">
@@ -7,10 +10,7 @@ const Tickets = () => {
       <div className="tickets-header">
         <h1 className="tickets-title">My Pass</h1>
         <button className="tickets-download-btn" aria-label="Download pass">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M10 3v10M6 9l4 4 4-4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M3 15h14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
-          </svg>
+         <img src={dd} alt="" />
         </button>
       </div>
  
@@ -27,13 +27,7 @@ const Tickets = () => {
           <div className="pass-qr-wrapper">
            
             <div className="pass-qr-placeholder">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="3" width="7" height="7" rx="1" stroke="#C8922A" strokeWidth="1.5"/>
-                <rect x="14" y="3" width="7" height="7" rx="1" stroke="#C8922A" strokeWidth="1.5"/>
-                <rect x="3" y="14" width="7" height="7" rx="1" stroke="#C8922A" strokeWidth="1.5"/>
-                <path d="M14 14h2v2h-2zM18 14h3M14 18h2M18 18h3v3M14 21h2" stroke="#C8922A" strokeWidth="1.5" strokeLinecap="round"/>
-              </svg>
-              <p className="pass-qr-hint">Add your QR image here</p>
+              <img src={qr} alt="" />
             </div>
           </div>
  

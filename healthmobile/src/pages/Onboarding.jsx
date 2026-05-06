@@ -62,7 +62,7 @@ const OnboardingScreens = () => {
       <div className="content-wrapper">
         <div className="content show">
           <div className="icon-area">
-            <div className="icon-circle">
+            <div className="icon-circlee">
               <img src={screen.img} alt={screen.alt} />
             </div>
           </div>

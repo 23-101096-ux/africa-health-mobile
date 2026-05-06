@@ -28,9 +28,9 @@
   margin-bottom: 48px;
 }
 
-.icon-circle {
-  width: 140px;
-  height: 140px;
+.icon-circlee {
+  width: 200px ;
+  height: 200px;
   border-radius: 50%;
   border: 1px solid rgba(245, 166, 35, 0.25);
   background: #1a1712;
@@ -40,8 +40,8 @@
 }
 
 .icon-circle img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -54,6 +54,7 @@
   font-size: 26px;
   color: #F5F0E8;
   margin-bottom: 12px;
+  margin-top: 50px;
 }
 
 .body {
