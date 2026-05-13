@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import "./Login.css"; 
 
+import google from "../assets/google.svg"; 
+import apple from "../assets/apple.svg"; 
+
 const RegisterPage = () => {
   const navigate = useNavigate();
 
@@ -48,8 +51,8 @@ const RegisterPage = () => {
         </div>
 
         <div className="social-box">
-          <button className="social-btn">G</button>
-          <button className="social-btn"></button>
+          <button className="social-btn"><img src={google} alt="" /></button>
+          <button className="social-btn"><img src={apple} alt="" /></button>
         </div>
       </div>
     </div>

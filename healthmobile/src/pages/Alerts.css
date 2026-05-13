@@ -21,8 +21,9 @@
 }
 
 .alerts-title {
-  font-size: 38px;
-  font-weight: 700;
+  font-size: 28px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
   color: #f0ece4;
   margin: 0 0 6px;
 }
