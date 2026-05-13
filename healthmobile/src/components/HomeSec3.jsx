@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom"; 
 import { supabase } from "../supabase";
 import "./HomeSec3.css";
 
@@ -7,6 +8,7 @@ import locc from "../assets/locc.svg";
 
 const HomeSec3 = () => {
   const [events, setEvents] = useState([]);
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -23,27 +25,26 @@ const HomeSec3 = () => {
 
   return (
     <div className="home-sec3-container">
-      
       <div className="sec3-header">
         <h3 className="sec3-title">Upcoming Events</h3>
         <span className="see-all">See all</span>
       </div>
 
-  
       <div className="cards-scroll-wrapper">
         {events.map((item) => (
-          <div className="event-card-div" key={item.id}>
-
-          
+          <div 
+            className="event-card-div" 
+            key={item.id}
+            onClick={() => navigate("/sessionDetails")} 
+            style={{ cursor: "pointer" }} 
+          >
             <div className="card-time-row">
               <span className="clock-icon"><img src={time} alt="" /></span>
               <p className="card-time-text">{item.start_time}</p>
             </div>
 
-         
             <h4 className="card-event-name">{item.title}</h4>
 
-           
             <div className="card-footer">
               <p className="card-speaker">{item.speaker_name}</p>
               <div className="location-info">
@@ -51,7 +52,6 @@ const HomeSec3 = () => {
                 <span className="loc-text">{item.hall_name}</span>
               </div>
             </div>
-
           </div>
         ))}
       </div>

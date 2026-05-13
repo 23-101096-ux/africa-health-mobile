@@ -10,6 +10,7 @@ import LoginPage from './pages/Loginpage';
 import RegisterPage from './pages/Registerpage';
 import BottomNav from './components/navbottoms';
 import { useLocation } from 'react-router-dom';
+import Session from './pages/sessionDetails';
 
 const HIDE_NAV_ROUTES = ['/', '/onboarding', '/login', '/register'];
 
@@ -28,6 +29,7 @@ const AppLayout = () => {
         <Route path="/maps"        element={<Maps />} />
         <Route path="/tickets"     element={<Tickets />} />
         <Route path="/alerts"      element={<Alerts />} />
+        <Route path="/sessionDetails"      element={<Session />} />
         <Route path="*"            element={<Navigate to="/" replace />} />
       </Routes>
 
